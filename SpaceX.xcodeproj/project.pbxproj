@@ -14,6 +14,9 @@
 		D119BC7C238DA36500C0B549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D119BC7A238DA36500C0B549 /* Main.storyboard */; };
 		D119BC7E238DA36500C0B549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D119BC7D238DA36500C0B549 /* Assets.xcassets */; };
 		D119BC81238DA36500C0B549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D119BC7F238DA36500C0B549 /* LaunchScreen.storyboard */; };
+		D119BC89238DA3DA00C0B549 /* SpaceX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119BC88238DA3DA00C0B549 /* SpaceX.swift */; };
+		D13BA7C423917DC10038D179 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13BA7C323917DC10038D179 /* VideoViewController.swift */; };
+		D1E9F4C7239033AA008DDBC3 /* SubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9F4C6239033AA008DDBC3 /* SubDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D119BC7D238DA36500C0B549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D119BC80238DA36500C0B549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D119BC82238DA36500C0B549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D119BC88238DA3DA00C0B549 /* SpaceX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX.swift; sourceTree = "<group>"; };
+		D13BA7C323917DC10038D179 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		D1E9F4C6239033AA008DDBC3 /* SubDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +69,12 @@
 				D119BC76238DA36500C0B549 /* MasterViewController.swift */,
 				D119BC78238DA36500C0B549 /* DetailViewController.swift */,
 				D119BC7A238DA36500C0B549 /* Main.storyboard */,
+				D13BA7C323917DC10038D179 /* VideoViewController.swift */,
+				D1E9F4C6239033AA008DDBC3 /* SubDetailViewController.swift */,
 				D119BC7D238DA36500C0B549 /* Assets.xcassets */,
 				D119BC7F238DA36500C0B549 /* LaunchScreen.storyboard */,
 				D119BC82238DA36500C0B549 /* Info.plist */,
+				D119BC88238DA3DA00C0B549 /* SpaceX.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -142,6 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D119BC73238DA36500C0B549 /* AppDelegate.swift in Sources */,
+				D13BA7C423917DC10038D179 /* VideoViewController.swift in Sources */,
+				D119BC89238DA3DA00C0B549 /* SpaceX.swift in Sources */,
+				D1E9F4C7239033AA008DDBC3 /* SubDetailViewController.swift in Sources */,
 				D119BC75238DA36500C0B549 /* SceneDelegate.swift in Sources */,
 				D119BC77238DA36500C0B549 /* MasterViewController.swift in Sources */,
 				D119BC79238DA36500C0B549 /* DetailViewController.swift in Sources */,
