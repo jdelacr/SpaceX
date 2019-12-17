@@ -19,5 +19,7 @@ class SpaceX {
     var launchsite:String = ""
     var flickrimg:String = ""
     var youtubeid:String = ""
+    var articlelink:String = ""
+    var wikipedia:String = ""
     
 }

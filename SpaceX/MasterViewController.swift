@@ -43,6 +43,8 @@ class MasterViewController: UITableViewController {
                 Space.launchyear = item["launch_year"] as! String
                 Space.missionpatch = item["links"]?["mission_patch_small"] as! String
                 Space.launchsite = item["launch_site"]?["site_name_long"] as! String
+                Space.articlelink = item["links"]?["article_link"] as! String
+                Space.wikipedia = item["links"]?["wikipedia"] as! String
                 
                 //Launch details
                 let launchdetails = item["details"] as? String
@@ -51,7 +53,7 @@ class MasterViewController: UITableViewController {
                     Space.details = launchdetails!
                 }
                 else{
-                    Space.details = "No Details"
+                    Space.details = "This spacecraft has no details entered. Please check the article or wikipedia for more details."
                 }
                 
                 //Launch Success
@@ -104,6 +106,8 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         prepareJSONData()
+        
+        
 
     }
 

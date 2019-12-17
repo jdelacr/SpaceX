@@ -11,6 +11,10 @@ import UIKit
 class SubDetailViewController: UIViewController {
 
     @IBOutlet weak var ViewDetail: UILabel!
+    @IBOutlet weak var BGview: UIView!
+    
+    @IBOutlet weak var articlebtn: UIButton!
+    @IBOutlet weak var wikibtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +22,32 @@ class SubDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         ViewDetail.text = SpaceXItem.details
+        ViewDetail.textColor = .white
+        
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor(red:0.20, green:0.03, blue:0.40, alpha:1.0).cgColor, UIColor(red:0.19, green:0.81, blue:0.82, alpha:1.0).cgColor]
+        layer.startPoint = CGPoint(x: 1,y: 0)
+        layer.endPoint = CGPoint(x: 1,y: 1)
+        BGview.layer.addSublayer(layer)
+        
+        articlebtn.layer.cornerRadius = 5
+        articlebtn.clipsToBounds = true
+        wikibtn.layer.cornerRadius = 5
+        wikibtn.clipsToBounds = true
+        
+        
     }
     
     var SpaceXItem:SpaceX = SpaceX()
     
+    @IBAction func didTapArticle(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "\(SpaceXItem.articlelink)")! as URL, options: [:], completionHandler: nil)
+    }
     
+    @IBAction func didTapWiki(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "\(SpaceXItem.wikipedia)")! as URL, options: [:], completionHandler: nil)
+    }
     /*
     // MARK: - Navigation
 
